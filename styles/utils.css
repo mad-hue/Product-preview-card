@@ -16,3 +16,15 @@ body {
     /* border: 2px solid red; */
     display: flex;
 }
+
+@media (max-width: 428px) {
+    .wrapper {
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        display: block;
+    }
+}

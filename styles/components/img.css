@@ -1,12 +1,36 @@
 .img {
     width: 350px;
-    height: 500px;
+    height: auto;
 }
 
-.img-img {
+.desktop-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+.mobile-img {
+    display: none;
+}
+
+@media (max-width: 428px) {
+    .img {
+        width: 350px;
+        height: auto;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
 }

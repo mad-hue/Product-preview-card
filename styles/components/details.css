@@ -1,6 +1,6 @@
 .details {
     width: 350px;
-    height: 500px;
+    height: auto;
     background-color: var(--clr-white);
     padding: 2.5rem;
     border-top-right-radius: 15px;
@@ -70,4 +70,51 @@
 .details__btn:hover {
     background-color: var(--clr-green700);
     transform: translateY(5px);
+}
+
+@media (max-width: 428px) {
+    .details {
+        height: auto;
+        padding: 2rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    .details__title {
+        font-size: 2rem;
+        max-width: 20ch;
+    }
+
+    .details-price {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .title {
+        font-size: 0.7rem;
+    }
+
+    .details__title {
+        font-size: 1.8rem;
+        max-width: 20ch;
+    }
+
+    .details__description {
+        font-size: 0.8rem;
+        max-width: 30ch;
+    }
+
+    .details-price {
+        font-size: 1.8rem;
+    }
+
+    .details-price span {
+        font-size: 0.8rem;
+    }
+
+    .details__btn {
+        font-size: 0.8rem;
+        margin: 1rem 0;
+    }
 }
